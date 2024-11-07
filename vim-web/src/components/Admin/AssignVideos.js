@@ -77,8 +77,6 @@ const AssignVideos = () => {
 
             {videos.length === 0 ? (
                 <p>No videos available</p>
-            ) : users.length === 0 ? (
-                <p>No users available</p>
             ) : (
                 <>
                     <table className="videos-table">
