@@ -1,0 +1,94 @@
+/* Container for the AssignVideos component */
+.assign-videos-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.assign-videos-heading {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+.videos-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.videos-table th,
+.videos-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.videos-table th {
+    background-color: #f2f2f2;
+}
+
+.videos-table td {
+    background-color: #fff;
+}
+
+/* Center the actions column */
+.actions-cell {
+    text-align: center;
+}
+
+/* Select Dropdown */
+.user-select {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+/* Assign Button Styling */
+.assign-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.assign-button:hover {
+    background-color: #45a049;
+}
+
+/* Pagination Styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination .page-item {
+    margin: 0 5px;
+}
+
+.pagination .active {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.pagination .disabled {
+    opacity: 0.5;
+}
+
+.pagination button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #f2f2f2;
+}

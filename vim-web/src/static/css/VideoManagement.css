@@ -1,0 +1,103 @@
+.video-management-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.video-management-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.video-management-table th,
+.video-management-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.video-management-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.edit-form {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.edit-form input,
+.edit-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+}
+
+button[type="button"] {
+    background-color: #dc3545;
+    color: white;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination li a {
+    padding: 8px 12px;
+    color: #007bff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination li.active a {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+/* Center-align the action buttons */
+.video-management-table td {
+    text-align: center;
+}
+
+/* Add any additional styles for the buttons */
+.video-management-table button {
+    margin: 0 5px;
+}
+
+.video-management-table th {
+    text-align: center;
+}

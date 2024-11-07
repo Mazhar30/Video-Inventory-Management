@@ -1,0 +1,49 @@
+version: '3.3'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: video_inventory
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./mysql_data:/var/lib/mysql   
+    ports:
+      - "3304:3306"
+      
+  redis:
+    image: redis:7
+    container_name: redis-container
+    ports:
+      - "6379:6379"
+      
+  vim:
+    build:
+      context: ./vim-server 
+      dockerfile: Dockerfile 
+    container_name: vim-container
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./videos:/app/videos
+    depends_on:
+      - mysql
+    links:
+     - redis
+     - mysql
+     
+     
+  vim-web:
+    build:
+      context: ./vim-web 
+      dockerfile: Dockerfile 
+    container_name: vim-web-container
+    ports:
+      - "3000:3000"
+    depends_on:
+      - vim
+
