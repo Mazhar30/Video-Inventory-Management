@@ -51,7 +51,7 @@
 
 
 # To Do
-# Add logs, un-assigning user from a video
-# No uniform response object is created for API responses, need to add
-# More than two role need to be handled by the system
-# Currently it is a mix of reactive and functional programming, need to make the whole system reactive
+ Add logs, un-assigning user from a video
+ No uniform response object is created for API responses, need to add
+ More than two role need to be handled by the system
+ Currently it is a mix of reactive and functional programming, need to make the whole system reactive
