@@ -32,8 +32,8 @@
 ## How to start vim-web
 - Run `docker-compose up --build vim-web`
 
-## We could have just used `docker-compose up --build` command to start all the containers. 
-## But the vim-server has dependency on mysql, so if mysql doesn't start before vim-server, there will be error.
+# We could have just used `docker-compose up --build` command to start all the containers. 
+# But the vim-server has dependency on mysql, so if mysql doesn't start before vim-server, there will be error.
 
 
 ## Videos will be stored on videos directory
@@ -50,7 +50,7 @@
 ## Go to http://localhost:3000 in the browser to find the UI.
 
 
-### To Do
+# To Do
 # Add logs, un-assigning user from a video
 # No uniform response object is created for API responses, need to add
 # More than two role need to be handled by the system
